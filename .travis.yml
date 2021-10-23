@@ -23,14 +23,14 @@ after_success:
   - docker push bijay4725sahoo/multi-server
   - docker push bijay4725sahoo/multi-worker
 
-deploy:
-  provider: elasticbeanstalk
-  region: 'ap-south-1'
-  app: 'multi-docker'
-  env: 'Multidocker-env'
-  bucket_name: 'elasticbeanstalk-ap-south-1-463767277365'
-  bucket_path: 'docker-multi'
-  on:
-    branch: main
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+# deploy:
+#   provider: elasticbeanstalk
+#   region: 'ap-south-1'
+#   app: 'multi-docker'
+#   env: 'Multidocker-env'
+#   bucket_name: 'elasticbeanstalk-ap-south-1-463767277365'
+#   bucket_path: 'docker-multi'
+#   on:
+#     branch: main
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_KEY
